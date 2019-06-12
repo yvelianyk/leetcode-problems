@@ -5,28 +5,22 @@ import java.util.*;
 public class FirstUniqueChar {
     public int firstUniqChar(String s) {
         char[] ss = s.toCharArray();
-        Map<Character,Integer> stringMap = new HashMap<Character,Integer>();
-        Set<Character> removeSet = new HashSet<Character>();
+        Map<Character,Integer> stringMap = new HashMap<>();
 
         for (int i = 0; i < ss.length; i++) {
-            if (!stringMap.containsKey(ss[i])) {
-                stringMap.put(ss[i], i);
+            if (stringMap.containsKey(ss[i])) {
+                int counter = stringMap.get(ss[i]);
+                stringMap.put(ss[i], ++counter);
             } else {
-                removeSet.add(ss[i]);
+                stringMap.put(ss[i], 1);
             }
         }
 
-        for (Character removeChar : removeSet) {
-            stringMap.remove(removeChar);
+        for (int i = 0; i < ss.length; i++) {
+            int counter = stringMap.get(ss[i]);
+            if(counter == 1) return i;
         }
-
-        if(stringMap.isEmpty()) {
-            return -1;
-        } else {
-            SortedSet<Integer> valuesSet = new TreeSet<>(stringMap.values());
-            return valuesSet.first();
-        }
-
+        return -1;
     }
 
 }
