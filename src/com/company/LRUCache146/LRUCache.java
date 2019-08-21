@@ -68,9 +68,7 @@ public class LRUCache {
 
     private void putInHead(DoublyLinkedNode newNode) {
         DoublyLinkedNode prevHead = this.dummyHead.next;
-        if (prevHead != null) {
-            prevHead.prev = newNode;
-        }
+        prevHead.prev = newNode;
         this.dummyHead.next = newNode;
         newNode.prev = this.dummyHead;
         newNode.next = prevHead;
