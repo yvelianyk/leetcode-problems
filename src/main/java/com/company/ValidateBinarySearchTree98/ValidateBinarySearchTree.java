@@ -1,7 +1,6 @@
 package com.company.ValidateBinarySearchTree98;
 
 import com.company.BinaryTreePostorderTraversal145.TreeNode;
-import sun.reflect.generics.tree.Tree;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +9,7 @@ public class ValidateBinarySearchTree {
 
     public boolean isValidBST(TreeNode root) {
         if (root == null) return true;
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<Integer>();
         traverse(root, list);
         if (list.size() == 1) return true;
 
