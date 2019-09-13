@@ -1,19 +1,15 @@
 package com.company;
 
-import com.company.BinaryTreePostorderTraversal145.TreeNode;
-import com.company.SameTree100.SameTree;
-import com.company.SerializeandDeserializeBinaryTree297.SerializeandDeserializeBinaryTree;
+import com.company.GroupShiftedStrings249.GroupShiftedStrings;
+
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
-        SameTree solution = new SameTree();
-        TreeNode tree1;
-        TreeNode tree2;
-        SerializeandDeserializeBinaryTree serializer = new SerializeandDeserializeBinaryTree();
-        tree1 = serializer.deserialize("[1,2,3]");
-        tree2 = serializer.deserialize("[1,2,3]");
-        boolean result = solution.isSameTree(tree1, tree2);
+        GroupShiftedStrings solution = new GroupShiftedStrings();
+        String[] strings = {"abc", "bcd", "acef", "xyz", "az", "ba", "a", "z"};
+        List<List<String>> result = solution.groupStrings(strings);
         System.out.println(result);
     }
 }
