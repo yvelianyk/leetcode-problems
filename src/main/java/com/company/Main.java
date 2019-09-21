@@ -1,17 +1,18 @@
 package com.company;
 
-import com.company.BinaryTreePostorderTraversal145.TreeNode;
-import com.company.CountUnivalueSubtrees250.CountUnivalueSubtrees;
-import com.company.SerializeandDeserializeBinaryTree297.SerializeandDeserializeBinaryTree;
+import com.company.WordBreak139.WordBreak;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
-        CountUnivalueSubtrees solution = new CountUnivalueSubtrees();
-        SerializeandDeserializeBinaryTree serializer = new SerializeandDeserializeBinaryTree();
-        TreeNode root = serializer.deserialize("[1,1,5,5,5,null,5]");
-        int result = solution.countUnivalSubtrees(root);
+        WordBreak solution = new WordBreak();
+        List<String> list = new ArrayList<>();
+        list.add("aaa");
+        list.add("aaaa");
+        boolean result = solution.wordBreak("aaaaaaa", list);
         System.out.println("RESULT: " + result);
-
     }
 }
