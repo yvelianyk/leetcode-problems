@@ -1,8 +1,7 @@
 package com.company;
 
-import com.company.CountArrayInversions.CountArrayInversions;
-import com.company.CountArrayInversions.ReadFile;
-import com.company.CountArrayInversions.ResultOfSC;
+import com.company.CellsInOddMatrix.CellsInOddMatrix;
+import com.company.ReconstructMatrix2D.ReconstructMatrix2D;
 
 import java.io.IOException;
 import java.util.List;
@@ -10,11 +9,9 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        CountArrayInversions solution = new CountArrayInversions();
-        ReadFile fileReader = new ReadFile();
-        List<Integer> list = fileReader.read();
+        ReconstructMatrix2D solution = new ReconstructMatrix2D();
 
-        ResultOfSC result = solution.sortAndCount(list);
-        System.out.println("RESULT: " + result.count);
+        List<List<Integer>> result = solution.reconstructMatrix(2,1, new int[]{1,1,1});
+        System.out.println("RESULT: " + result);
     }
 }
