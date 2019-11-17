@@ -1,20 +1,15 @@
 package com.company;
 
-import com.company.MinimumSwapsToStringsEqual1247.MinimumSwapsToStringsEqual;
-import com.company.contest13.Contest13Task1;
-import com.company.contest13.Contest13Task2;
-import com.company.contest3.Shift2DGrid;
+import com.company.CountOfNiceSubarray1248.CountOfNiceSubarray;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        MinimumSwapsToStringsEqual solution = new MinimumSwapsToStringsEqual();
+        CountOfNiceSubarray solution = new CountOfNiceSubarray();
 
-        int result = solution.minimumSwap("xx","yy");
+        int result = solution.numberOfSubarrays(new int[]{2,1,2,1,2,2,1,2}, 2);
 
         System.out.println(result);
 
