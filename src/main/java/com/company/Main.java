@@ -1,15 +1,16 @@
 package com.company;
 
 import com.company.CountOfNiceSubarray1248.CountOfNiceSubarray;
+import com.company.MinimumRemovetoMakeValidParentheses1249.MinimumRemovetoMakeValidParentheses;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        CountOfNiceSubarray solution = new CountOfNiceSubarray();
+        MinimumRemovetoMakeValidParentheses solution = new MinimumRemovetoMakeValidParentheses();
 
-        int result = solution.numberOfSubarrays(new int[]{2,1,2,1,2,2,1,2}, 2);
+        String result = solution.minRemoveToMakeValid("lee(t(c)o)de)");
 
         System.out.println(result);
 
