@@ -1,16 +1,15 @@
 package com.company;
 
-import com.company.CountOfNiceSubarray1248.CountOfNiceSubarray;
-import com.company.MinimumRemovetoMakeValidParentheses1249.MinimumRemovetoMakeValidParentheses;
+import com.company.CheckIfItIsaStraightLine1232.CheckIfItIsaStraightLine;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        MinimumRemovetoMakeValidParentheses solution = new MinimumRemovetoMakeValidParentheses();
+        CheckIfItIsaStraightLine solution = new CheckIfItIsaStraightLine();
 
-        String result = solution.minRemoveToMakeValid("lee(t(c)o)de)");
+        boolean result = solution.checkStraightLine(new int[][]{{1,2},{2,3},{3,4},{4,5},{5,6},{6,7}});
 
         System.out.println(result);
 
