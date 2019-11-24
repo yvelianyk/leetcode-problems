@@ -1,7 +1,8 @@
 package com.company;
 
-import com.company.Contest164.Contest164Problem1;
-import com.company.Contest164.Contest164Problem2;
+import com.company.ArrayTransformation1243.ArrayTransformation;
+import com.company.CheckIfItIsaStraightLine1232.CheckIfItIsaStraightLine;
+import com.company.RemoveSubfolders1233.RemoveSubfolders;
 
 import java.io.IOException;
 import java.util.List;
@@ -9,9 +10,10 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Contest164Problem2 solution = new Contest164Problem2();
+        ArrayTransformation solution = new ArrayTransformation();
 
-        int result = solution.countServers(new int[][]{{1,1,0,0},{0,0,1,0},{0,0,1,0},{0,0,0,1}});
+        // List<Integer> result = solution.transformArray(new int[]{1,6,3,4,3,5});
+        List<Integer> result = solution.transformArray(new int[]{2,1,2,1,1,2,2,1});
 
         System.out.println(result);
 
