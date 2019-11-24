@@ -1,7 +1,6 @@
 package com.company;
 
-import com.company.CheckIfItIsaStraightLine1232.CheckIfItIsaStraightLine;
-import com.company.RemoveSubfolders1233.RemoveSubfolders;
+import com.company.Contest164.Contest164Problem1;
 
 import java.io.IOException;
 import java.util.List;
@@ -9,9 +8,9 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        RemoveSubfolders solution = new RemoveSubfolders();
+        Contest164Problem1 solution = new Contest164Problem1();
 
-        List<String > result = solution.removeSubfolders(new String[]{"/a/b/c","/a/b/ca","/a/b/d"});
+        int result = solution.minTimeToVisitAllPoints(new int[][]{{1,1},{3,4},{-1,0}});
 
         System.out.println(result);
 
