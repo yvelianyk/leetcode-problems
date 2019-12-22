@@ -1,16 +1,17 @@
 package com.company;
 
-import com.company.SequentialDigits1291.SequentialDigits;
+import com.company.Contest168.Problem2;
+import com.company.Contest168.Problem3;
 
 import java.io.IOException;
-import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        SequentialDigits solution = new SequentialDigits();
+        Problem3 solution = new Problem3();
 
-        List<Integer> result = solution.sequentialDigits(1000, 13000);
+        int result = solution.maxFreq("aababcaab", 2,3,4);
+//        int result = solution.maxFreq("abcde", 2,3,3);
 
         System.out.println(result);
 
