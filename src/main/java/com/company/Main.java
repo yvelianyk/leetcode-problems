@@ -1,17 +1,15 @@
 package com.company;
 
-import com.company.Contest168.Problem2;
-import com.company.Contest168.Problem3;
+import com.company.MockInterviews.AmazonMockInterviews.Problem1_12232019;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Problem3 solution = new Problem3();
+        Problem1_12232019 solution = new Problem1_12232019();
 
-        int result = solution.maxFreq("aababcaab", 2,3,4);
-//        int result = solution.maxFreq("abcde", 2,3,3);
+        int result = solution.dietPlanPerformance(new int[]{3,2}, 2,0,1);
 
         System.out.println(result);
 
