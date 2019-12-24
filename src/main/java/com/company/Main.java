@@ -1,15 +1,16 @@
 package com.company;
 
-import com.company.MockInterviews.AmazonMockInterviews.Problem1_12232019;
+import com.company.MockInterviews.AmazonMockInterviews.Mock12242019.Problem2;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Problem1_12232019 solution = new Problem1_12232019();
+        Problem2 solution = new Problem2();
 
-        int result = solution.dietPlanPerformance(new int[]{3,2}, 2,0,1);
+
+        int result = solution.numEquivDominoPairs(new int[][]{{1,2},{2,1},{3,4},{5,6}});
 
         System.out.println(result);
 
