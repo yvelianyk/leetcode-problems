@@ -1,17 +1,18 @@
 package com.company;
 
-import com.company.MockInterviews.AmazonMockInterviews.Mock12252019.Problem1;
-import com.company.MockInterviews.AmazonMockInterviews.Mock12252019.Problem2;
+import com.company.XKindDeckofCards914.XKindDeckofCards;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Problem2 solution = new Problem2();
+        XKindDeckofCards solution = new XKindDeckofCards();
 
-
-        int[][] result = solution.generateMatrix(4);
+        boolean result = solution.hasGroupsSizeX(new int[]{1,1,1,2,2,2,3,3});
+        // boolean result = solution.hasGroupsSizeX(new int[]{1,1,1,1,2,2,2,2,2,2});
+        // boolean result = solution.hasGroupsSizeX(new int[]{1});
+        // boolean result = solution.hasGroupsSizeX(new int[]{1,1,2,2,2,2});
 
         System.out.println(result);
 
