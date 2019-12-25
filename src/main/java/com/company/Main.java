@@ -1,6 +1,7 @@
 package com.company;
 
-import com.company.MockInterviews.AmazonMockInterviews.Mock12242019.Problem2;
+import com.company.MockInterviews.AmazonMockInterviews.Mock12252019.Problem1;
+import com.company.MockInterviews.AmazonMockInterviews.Mock12252019.Problem2;
 
 import java.io.IOException;
 
@@ -10,7 +11,7 @@ public class Main {
         Problem2 solution = new Problem2();
 
 
-        int result = solution.numEquivDominoPairs(new int[][]{{1,2},{2,1},{3,4},{5,6}});
+        int[][] result = solution.generateMatrix(4);
 
         System.out.println(result);
 
