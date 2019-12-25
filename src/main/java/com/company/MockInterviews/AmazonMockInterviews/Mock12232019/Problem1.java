@@ -1,7 +1,7 @@
-package com.company.MockInterviews.AmazonMockInterviews;
+package com.company.MockInterviews.AmazonMockInterviews.Mock12232019;
 
 // https://leetcode.com/problems/diet-plan-performance/submissions/
-public class Problem1_12232019 {
+public class Problem1 {
     public int dietPlanPerformance(int[] calories, int k, int lower, int upper) {
         int left = 0;
         int right = k - 1;

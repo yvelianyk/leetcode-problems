@@ -1,9 +1,9 @@
-package com.company.MockInterviews.AmazonMockInterviews;
+package com.company.MockInterviews.AmazonMockInterviews.Mock12232019;
 
 import com.company.BinaryTreePostorderTraversal145.TreeNode;
 
 // https://leetcode.com/problems/subtree-of-another-tree/submissions/
-public class Problem2_12232019 {
+public class Problem2 {
 
     private boolean result = false;
 
