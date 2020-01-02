@@ -21,9 +21,8 @@ public class Problem2 {
 
         memo[d][target] = 0;
         for (int i = 1; i <= f; i++) {
-            memo[d][target] = memo[d][target] % mod + traverse(d - 1, f, target - i) % mod;
+            memo[d][target] = (memo[d][target] + traverse(d - 1, f, target - i)) % mod;
         }
-        return memo[d][target] % mod;
-
+        return memo[d][target];
     }
 }
