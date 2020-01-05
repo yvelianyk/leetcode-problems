@@ -22,7 +22,7 @@ public class Problem3 {
         // we just use `sort` static method from Collections framework with
         // custom comparator.
         List<String> res = new ArrayList(freqMap.keySet());
-        Collections.sort(res, (a, b) -> (freqMap.get(a) == freqMap.get(b) ? a.compareTo(b) : freqMap.get(a) - freqMap.get(b)));
+        Collections.sort(res, (a, b) -> (freqMap.get(a).equals(freqMap.get(b)) ? a.compareTo(b) : freqMap.get(a) - freqMap.get(b)));
         return new ArrayList<>(res);
     }
 
