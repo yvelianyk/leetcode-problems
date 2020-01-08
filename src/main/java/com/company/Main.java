@@ -1,15 +1,17 @@
 package com.company;
 
-import com.company.Contest170.Problem2;
+
+import com.company.MockInterviews.AmazonMockInterviews.Mock01082020.Problem2;
 
 import java.io.IOException;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
         Problem2 solution = new Problem2();
 
-        int[] result = solution.xorQueries(new int[]{1,3,4,8}, new int[][]{{0,1}, {1,2}, {0,3}, {3,3}});
+        List<Integer> result = solution.partitionLabels("ababcbacadefegdehijhklij");
         System.out.println(result);
 
     }
