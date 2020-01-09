@@ -1,4 +1,4 @@
-package com.company.MockInterviews.AmazonMockInterviews.Mock01082020;
+package com.company.MockInterviews.AMockInterviews.Mock01082020;
 
 // https://leetcode.com/problems/rectangle-overlap/
 public class Problem1 {

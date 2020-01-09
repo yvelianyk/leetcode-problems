@@ -1,4 +1,4 @@
-package com.company.MockInterviews.AmazonMockInterviews.Mock12232019;
+package com.company.MockInterviews.AMockInterviews.Mock12232019;
 
 // https://leetcode.com/problems/diet-plan-performance/submissions/
 public class Problem1 {

@@ -1,9 +1,5 @@
 package com.company.BContest16;
 
-import com.company.MockInterviews.AmazonMockInterviews.Mock12262019.Problem2;
-
-import java.util.HashMap;
-import java.util.Map;
 import java.util.PriorityQueue;
 
 public class Problem1 {

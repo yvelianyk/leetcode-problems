@@ -1,4 +1,4 @@
-package com.company.MockInterviews.AmazonMockInterviews.Mock12242019;
+package com.company.MockInterviews.AMockInterviews.Mock12242019;
 
 import java.util.LinkedList;
 import java.util.Queue;

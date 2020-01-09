@@ -1,4 +1,4 @@
-package com.company.MockInterviews.AmazonMockInterviews.Mock01022020;
+package com.company.MockInterviews.AMockInterviews.Mock01022020;
 
 // https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/
 public class Problem2 {

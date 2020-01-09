@@ -1,4 +1,4 @@
-package com.company.MockInterviews.AmazonMockInterviews.Mock12272019;
+package com.company.MockInterviews.AMockInterviews.Mock12272019;
 
 import java.util.*;
 

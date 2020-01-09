@@ -1,4 +1,4 @@
-package com.company.MockInterviews.AmazonMockInterviews.Mock12272019;
+package com.company.MockInterviews.AMockInterviews.Mock12272019;
 
 // https://leetcode.com/problems/reverse-string-ii/
 public class Problem1 {

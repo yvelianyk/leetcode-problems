@@ -1,4 +1,4 @@
-package com.company.MockInterviews.AmazonMockInterviews.Mock01032020;
+package com.company.MockInterviews.AMockInterviews.Mock01032020;
 
 import java.util.HashMap;
 import java.util.Map;

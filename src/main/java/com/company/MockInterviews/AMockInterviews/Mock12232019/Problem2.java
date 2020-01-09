@@ -1,4 +1,4 @@
-package com.company.MockInterviews.AmazonMockInterviews.Mock12232019;
+package com.company.MockInterviews.AMockInterviews.Mock12232019;
 
 import com.company.BinaryTreePostorderTraversal145.TreeNode;
 

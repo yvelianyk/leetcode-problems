@@ -1,10 +1,8 @@
 package com.company;
 
-import com.company.MockInterviews.AmazonMockInterviews.Mock01092020.Problem1;
-import com.company.MockInterviews.AmazonMockInterviews.Mock01092020.Problem2;
+import com.company.MockInterviews.AMockInterviews.Mock01092020.Problem2;
 
 import java.io.IOException;
-import java.util.List;
 
 public class Main {
 

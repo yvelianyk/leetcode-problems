@@ -1,4 +1,4 @@
-package com.company.MockInterviews.AmazonMockInterviews.Mock12252019;
+package com.company.MockInterviews.AMockInterviews.Mock12252019;
 
 // https://leetcode.com/problems/spiral-matrix-ii/
 public class Problem2 {
