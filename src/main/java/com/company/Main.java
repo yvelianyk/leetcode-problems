@@ -1,7 +1,7 @@
 package com.company;
 
-
-import com.company.MockInterviews.AmazonMockInterviews.Mock01082020.Problem2;
+import com.company.MockInterviews.AmazonMockInterviews.Mock01092020.Problem1;
+import com.company.MockInterviews.AmazonMockInterviews.Mock01092020.Problem2;
 
 import java.io.IOException;
 import java.util.List;
@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         Problem2 solution = new Problem2();
 
-        List<Integer> result = solution.partitionLabels("ababcbacadefegdehijhklij");
+        int[] result = solution.prisonAfterNDays(new int[]{1,0,0,1,0,0,1,0}, 1000000000);
         System.out.println(result);
 
     }

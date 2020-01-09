@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+// https://leetcode.com/problems/partition-labels/
 public class Problem2 {
     public List<Integer> partitionLabels(String S) {
         if (S == null || S.length() == 0) return null;

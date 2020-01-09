@@ -1,5 +1,6 @@
 package com.company.MockInterviews.AmazonMockInterviews.Mock01082020;
 
+// https://leetcode.com/problems/rectangle-overlap/
 public class Problem1 {
     public boolean isRectangleOverlap(int[] rec1, int[] rec2) {
         return !(rec1[2] <= rec2[0] ||   // left
