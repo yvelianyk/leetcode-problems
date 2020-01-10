@@ -6,6 +6,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
+// https://leetcode.com/problems/k-closest-points-to-origin/
 public class Problem2 {
     public int[][] kClosest(int[][] points, int K) {
         Queue<int[]> heap = new PriorityQueue<int[]>(new Problem2.HeapComparator());
@@ -25,9 +26,7 @@ public class Problem2 {
         public int compare(int[] val1, int[] val2) {
             double first = Math.sqrt(val1[0] * val1[0] + val1[1] * val1[1]);
             double second = Math.sqrt(val2[0] * val2[0] + val2[1] * val2[1]);
-            if (first < second) return -1;
-            if (first > second) return 1;
-            return 0;
+            return Double.compare(first, second);
         }
 
     }
