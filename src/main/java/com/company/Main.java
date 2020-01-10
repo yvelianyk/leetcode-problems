@@ -1,15 +1,15 @@
 package com.company;
 
-import com.company.MockInterviews.AMockInterviews.Mock01092020.Problem2;
+import com.company.MockInterviews.AMockInterviews.Mock01102020.Problem1;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Problem2 solution = new Problem2();
+        Problem1 solution = new Problem1();
 
-        int[] result = solution.prisonAfterNDays(new int[]{1,0,0,1,0,0,1,0}, 1000000000);
+        String result = solution.longestPalindrome("cabasabc");
         System.out.println(result);
 
     }
