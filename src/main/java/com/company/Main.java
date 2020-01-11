@@ -1,15 +1,16 @@
 package com.company;
 
-import com.company.MockInterviews.AMockInterviews.Mock01102020.Problem1;
+import com.company.Contest17.Problem4;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Problem1 solution = new Problem1();
+        Problem4 solution = new Problem4();
 
-        String result = solution.longestPalindrome("cabasabc");
+        int result = solution.distinctEchoSubstrings("abcabcabc");
+        // int result = solution.distinctEchoSubstrings("aacabcabc");
         System.out.println(result);
 
     }
