@@ -1,16 +1,16 @@
 package com.company;
 
-import com.company.Contest17.Problem4;
+import com.company.Contest171.Problem3;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Problem4 solution = new Problem4();
+        Problem3 solution = new Problem3();
 
-        int result = solution.distinctEchoSubstrings("abcabcabc");
-        // int result = solution.distinctEchoSubstrings("aacabcabc");
+        int result = solution.makeConnected(6, new int[][]{{0,1},{0,2},{0,3},{1,2},{1,3}});
+
         System.out.println(result);
 
     }
