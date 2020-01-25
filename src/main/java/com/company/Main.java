@@ -1,24 +1,22 @@
 package com.company;
 
-import com.company.BinaryTreePostorderTraversal145.TreeNode;
-import com.company.Contest172.Problem1;
-import com.company.Contest172.Problem2;
-import com.company.Contest172.Problem3;
-import com.company.SerializeandDeserializeBinaryTree297.SerializeandDeserializeBinaryTree;
+import com.company.Contest18.Problem1;
+import com.company.Contest18.Problem2;
+import com.company.Contest18.Problem3;
 
 import java.io.IOException;
-import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
         Problem3 solution = new Problem3();
-        SerializeandDeserializeBinaryTree serializer = new SerializeandDeserializeBinaryTree();
-        TreeNode tree = serializer.deserialize("[1,2,3]");
-        TreeNode result = solution.removeLeafNodes(tree, 1);
 
-        String ser = serializer.serialize(result);
-        System.out.println(ser);
+        int[][] result = solution.diagonalSort(new int[][]{
+                {3, 3, 1, 1},
+                {2, 2, 1, 2},
+                {1, 1, 1, 2},
+        });
+        System.out.println(result);
 
     }
 }
