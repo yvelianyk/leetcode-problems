@@ -12,10 +12,9 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Problem3 solution = new Problem3();
-        SerializeandDeserializeBinaryTree serializer = new SerializeandDeserializeBinaryTree();
-        TreeNode root = serializer.deserialize("[1,2,3,4,5,6]");
-        int result = solution.maxProduct(root);
+        NumberOfConnectedCmpts323 solution = new NumberOfConnectedCmpts323();
+        // int result = solution.countComponents(5, new int[][]{{0,1},{1,2},{3,4}});
+        int result = solution.countComponents(5, new int[][]{{0,1},{1,2},{3,4}});
         System.out.println(result);
 
     }
