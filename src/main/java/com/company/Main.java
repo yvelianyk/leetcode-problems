@@ -1,20 +1,25 @@
 package com.company;
 
-
-import com.company.BinaryTreePostorderTraversal145.TreeNode;
-import com.company.Contest174.Problem2;
-import com.company.Contest174.Problem3;
-import com.company.SerializeandDeserializeBinaryTree297.SerializeandDeserializeBinaryTree;
+import com.company.TheEarliestMomentWhenEveryoneBecomeFriends1101.TheEarliestMomentWhenEveryoneBecomeFriends;
 
 import java.io.IOException;
-import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        NumberOfConnectedCmpts323 solution = new NumberOfConnectedCmpts323();
-        // int result = solution.countComponents(5, new int[][]{{0,1},{1,2},{3,4}});
-        int result = solution.countComponents(5, new int[][]{{0,1},{1,2},{3,4}});
+        TheEarliestMomentWhenEveryoneBecomeFriends solution = new TheEarliestMomentWhenEveryoneBecomeFriends();
+
+        int[][] logs = new int[][]{
+                {20190104,3,4},
+                {20190101,0,1},
+                {20190107,2,3},
+                {20190211,1,5},
+                {20190224,2,4},
+                {20190301,0,3},
+                {20190312,1,2},
+                {20190322,4,5},
+        };
+        int result = solution.earliestAcq(logs, 6);
         System.out.println(result);
 
     }
