@@ -1,18 +1,19 @@
 package com.company;
 
-import com.company.BContest20.Cashier;
-import com.company.BContest20.Problem1;
-import com.company.BContest20.Problem3;
-import com.company.InsertionSort.InsertionSort;
+
+import com.company.BinaryTreePostorderTraversal145.TreeNode;
+import com.company.Contest179.Problem1;
+import com.company.Contest179.Problem2;
+import com.company.SerializeandDeserializeBinaryTree297.SerializeandDeserializeBinaryTree;
 
 import java.io.IOException;
-import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        InsertionSort solution = new InsertionSort();
-        List<Integer> sorted = solution.sortArray(new int[]{3,2,5,1,4});
+        Problem2 solution = new Problem2();
+
+        int sorted = solution.numTimesAllBlue(new int[]{2,1,3,5,4});
         System.out.println(sorted);
     }
 }
