@@ -1,10 +1,7 @@
 package com.company;
 
-
-import com.company.BinaryTreePostorderTraversal145.TreeNode;
-import com.company.Contest179.Problem1;
-import com.company.Contest179.Problem2;
-import com.company.SerializeandDeserializeBinaryTree297.SerializeandDeserializeBinaryTree;
+import com.company.MockInterviews.GMockInterviews.Mock10032020.Problem1;
+import com.company.MockInterviews.GMockInterviews.Mock10032020.Problem2;
 
 import java.io.IOException;
 
@@ -13,7 +10,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         Problem2 solution = new Problem2();
 
-        int sorted = solution.numTimesAllBlue(new int[]{2,1,3,5,4});
-        System.out.println(sorted);
+        int result = solution.networkDelayTime(new int[][]{{1,2,1},{2,3,2},{1,3,4}}, 3, 2);
+        System.out.println(result);
     }
 }
