@@ -2,21 +2,18 @@ package com.company;
 
 
 
-import com.company.Contest181.Problem3;
-import com.company.Contest181.Problem4;
+import com.company.TimeToInformAllEmployees1376.TimeToInformAllEmployees;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Problem3 solution = new Problem3();
+        TimeToInformAllEmployees solution = new TimeToInformAllEmployees();
 
         // 4
         //[[4,3],[1,4],[4,6],[1,7]]
-        boolean result = solution.hasValidPath(new int[][]{
-                {1,1,1,1,1,1,3},
-        });
+        int result = solution.numOfMinutes(6, 2, new int[]{2,2,-1,2,2,2}, new int[]{0,0,1,0,0,0});
         System.out.println(result);
     }
 }
