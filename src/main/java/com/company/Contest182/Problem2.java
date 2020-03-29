@@ -3,36 +3,28 @@ package com.company.Contest182;
 public class Problem2 {
 
     public int numTeams(int[] rating) {
-        int incr = numOfIncDecrSubseqOfSizeK(rating, rating.length, 3, true);
-        int decr = numOfIncDecrSubseqOfSizeK(rating, rating.length, 3, false);
+        int incr = countSubsequences(rating, true);
+        int decr = countSubsequences(rating, false);
         return incr + decr;
     }
 
-    private int numOfIncDecrSubseqOfSizeK(int arr[], int n, int k, boolean incr) {
-        int dp[][] = new int[k][n], sum = 0;
-        for (int i = 0; i < n; i++) {
-            dp[0][i] = 1;
-        }
-        for (int l = 1; l < k; l++) {
-            for (int i = l; i < n; i++) {
+    private int countSubsequences(int arr[], boolean incr) {
+        int length = arr.length;
+        int[][] dp = new int[3][length];
+        int sum = 0;
+        for (int i = 0; i < length; i++) dp[0][i] = 1;
+        for (int l = 1; l < 3; l++) {
+            for (int i = l; i < length; i++) {
                 dp[l][i] = 0;
                 for (int j = l - 1; j < i; j++) {
-                    if (incr) {
-                        if (arr[j] < arr[i]) {
-                            dp[l][i] += dp[l - 1][j];
-                        }
-                    } else {
-                        if (arr[j] > arr[i]) {
-                            dp[l][i] += dp[l - 1][j];
-                        }
+                    boolean condition = incr ? arr[j] < arr[i] : arr[j] > arr[i];
+                    if (condition) {
+                        dp[l][i] += dp[l - 1][j];
                     }
                 }
             }
         }
-
-        for (int i = k - 1; i < n; i++) {
-            sum += dp[k - 1][i];
-        }
+        for (int i = 2; i < length; i++) sum += dp[2][i];
 
         return sum;
     }
