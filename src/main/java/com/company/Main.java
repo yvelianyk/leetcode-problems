@@ -1,18 +1,15 @@
 package com.company;
 
 
-import com.company.Contest182.Problem2;
-import com.company.MinCostClimbingStairs746.MinCostClimbingStairs;
-import com.company.PaintFence276.PaintFence;
-import com.company.PaintHouse256.PaintHouse;
+import com.company.BContest23.Problem4;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        PaintFence solution = new PaintFence();
-        int result = solution.numWays(4,2);
+        Problem4 solution = new Problem4();
+        int result = solution.maxSatisfaction(new int[]{-2,5,-1,0,3,-3});
         System.out.println(result);
     }
 }
