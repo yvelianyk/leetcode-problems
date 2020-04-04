@@ -2,6 +2,7 @@ package com.company.BContest23;
 
 import java.util.Arrays;
 
+// TODO: could be improved used prefix sum
 public class Problem4 {
     public int maxSatisfaction(int[] satisfaction) {
         Arrays.sort(satisfaction);
