@@ -1,40 +1,34 @@
 package com.company.Contest183;
-// TODO:
-public class Problem4 {
-    public String stoneGameIII(int[] stoneValue) {
-        int alice = 0;
-        int bob = 0;
-        int index = 0;
-        boolean isAlice = true;
-        while (index <= stoneValue.length - 1) {
-            int[] best = getBest(index, stoneValue);
-            index = best[1] + 1;
-            if (isAlice) {
-                alice += best[0];
-            } else {
-                bob += best[0];
-            }
-            isAlice = !isAlice;
-        }
 
-        if (alice > bob) return "Alice";
-        if (alice < bob) return "Bob";
+import java.util.Arrays;
+
+public class Problem4 {
+    private int[] memo;
+    private int[] stoneValue;
+
+    public String stoneGameIII(int[] stoneValue) {
+        memo = new int[stoneValue.length];
+        this.stoneValue = stoneValue;
+        Arrays.fill(memo, -1);
+        int max = getAliceDiff(0);
+        if (max > 0) return "Alice";
+        if (max < 0) return "Bob";
         return "Tie";
     }
 
-    private int[] getBest(int start, int[] values) {
-        int result = values[start];
-        int index = start;
-        if (start == values.length - 1) return new int[]{result, start};
-        for (int i = start + 1; i < start + 3; i++) {
-            if (i >= values.length) continue;
-            int value = values[i];
-            if (value >= 0) {
-                result += value;
-                index++;
-            }
-        }
-        return new int[]{result,index};
-    }
+    private int getAliceDiff(int index) {
+        if (index >= stoneValue.length) return 0;
+        if (memo[index] != -1) return memo[index];
 
+        int result = Integer.MIN_VALUE;
+        int total = 0;
+        for (int i = index; i < index + 3; i++) {
+            if (i == stoneValue.length) break;
+            total += stoneValue[i];
+            result = Math.max(result, total - getAliceDiff(i + 1));
+        }
+
+        memo[index] = result;
+        return memo[index];
+    }
 }

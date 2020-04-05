@@ -2,7 +2,6 @@ package com.company.MinimumPathSum64;
 
 import java.util.Arrays;
 
-// TODO:
 public class MinimumPathSum {
     private int[][] memo;
     public int minPathSum(int[][] grid) {
