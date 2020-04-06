@@ -1,19 +1,19 @@
 package com.company;
 
-
-
-import com.company.Contest183.Problem1;
-import com.company.Contest183.Problem4;
+import com.company.MinimumFallingPathSum931.MinimumFallingPathSum;
 
 import java.io.IOException;
-import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Problem4 solution = new Problem4();
+        MinimumFallingPathSum solution = new MinimumFallingPathSum();
 
-        String result = solution.stoneGameIII(new int[]{1,2,3,7});
+        int result = solution.minFallingPathSum(new int[][]{
+                {1,2,3},
+                {4,5,6},
+                {7,8,9},
+        });
         System.out.println(result);
     }
 }
