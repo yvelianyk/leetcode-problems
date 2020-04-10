@@ -1,19 +1,42 @@
 package com.company;
 
-import com.company.LastStoneWeightII1049.LastStoneWeightII;
-import com.company.LinkedListCycleII142.ListNode;
-import com.company.PerfectSqares279.PerfectSquaresDP;
-import com.company.ThirtyDayChellenge.MiddleLinkedList;
+import com.company.Triangle120.Triangle;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        LastStoneWeightII solution = new LastStoneWeightII();
+        Triangle solution = new Triangle();
 
-        int result = solution.lastStoneWeightII(new int[]{2,7,4,1,8,1});
-        //int result = solution.lastStoneWeightII(new int[]{2,1,6,4,5});
+        List<List<Integer>> triangle = new ArrayList<>();
+        List<Integer> list1 = new ArrayList<>();
+        List<Integer> list2 = new ArrayList<>();
+        List<Integer> list3 = new ArrayList<>();
+        List<Integer> list4 = new ArrayList<>();
+
+        list1.add(2);
+
+        list2.add(3);
+        list2.add(4);
+
+        list3.add(6);
+        list3.add(5);
+        list3.add(7);
+
+        list4.add(4);
+        list4.add(1);
+        list4.add(8);
+        list4.add(3);
+
+        triangle.add(list1);
+        triangle.add(list2);
+        triangle.add(list3);
+        triangle.add(list4);
+
+        int result = solution.minimumTotal(triangle);
 
         System.out.println(result);
     }
