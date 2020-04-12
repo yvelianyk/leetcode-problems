@@ -1,20 +1,14 @@
 package com.company;
 
-import com.company.BinaryTreePostorderTraversal145.TreeNode;
-import com.company.Contest184.Problem1;
-import com.company.Contest184.Problem3;
-import com.company.Contest184.Problem4;
-import com.company.SerializeandDeserializeBinaryTree297.SerializeandDeserializeBinaryTree;
-import com.company.ThirtyDayChellenge.DiameterOfBinaryTree;
+import com.company.ThirtyDayChellenge.LastStoneWeight;
 
 import java.io.IOException;
-import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Problem4 solution = new Problem4();
-        int result = solution.numOfWays(5000);
+        LastStoneWeight solution = new LastStoneWeight();
+        int result = solution.lastStoneWeight(new int[]{1,2});
         System.out.println(result);
     }
 }
