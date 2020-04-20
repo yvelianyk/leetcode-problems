@@ -1,21 +1,20 @@
 package com.company;
 
 
-import com.company.BContest24.Problem4;
-import com.company.CoinChange322.Solution;
-import com.company.NumberOfIslands200.NumberOfIslandsUF;
+import com.company.BinaryTreePostorderTraversal145.TreeNode;
+import com.company.SerializeandDeserializeBinaryTree297.SerializeandDeserializeBinaryTree;
+import com.company.ValidateBinarySearchTree98.ValidateBSTRecursion;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        Problem4 solution = new Problem4();
-
-        int result = solution.numberOfArrays("1317", 2000);
+        ValidateBSTRecursion solution = new ValidateBSTRecursion();
+        SerializeandDeserializeBinaryTree serializer = new SerializeandDeserializeBinaryTree();
+        TreeNode root = serializer.deserialize("[1,1]");
+        boolean result = solution.isValidBST(root);
 
         System.out.println(result);
     }
