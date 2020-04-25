@@ -1,21 +1,25 @@
 package com.company;
 
 
-import com.company.BinaryTreePostorderTraversal145.TreeNode;
-import com.company.MockInterviews.GMockInterviews.Mock21042020.Problem2;
-import com.company.SerializeandDeserializeBinaryTree297.SerializeandDeserializeBinaryTree;
-import com.company.ValidateBinarySearchTree98.ValidateBSTRecursion;
-
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        Problem2 solution = new Problem2();
+        // Problem2 solution = new Problem2();
 
-        boolean result = solution.repeatedSubstringPattern("abab");
+//        int[] result = solution.gardenNoAdj(4, new int[][]{
+//                {1,2},
+//                {2,3},
+//                {3,4},
+//                {4,1},
+//                {1,3},
+//                {2,4},
+//        });
 
-        System.out.println(result);
+        // int[] result = solution.gardenNoAdj(1, new int[][]{});
+
+        //System.out.println(result);
     }
 }
