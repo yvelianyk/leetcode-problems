@@ -1,25 +1,15 @@
 package com.company;
 
 
+import com.company.JumpGame55.JumpGameTopDown;
+
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-
-        // Problem2 solution = new Problem2();
-
-//        int[] result = solution.gardenNoAdj(4, new int[][]{
-//                {1,2},
-//                {2,3},
-//                {3,4},
-//                {4,1},
-//                {1,3},
-//                {2,4},
-//        });
-
-        // int[] result = solution.gardenNoAdj(1, new int[][]{});
-
-        //System.out.println(result);
+        JumpGameTopDown solution = new JumpGameTopDown();
+        boolean result = solution.canJump(new int[]{3,2,1,0,4});
+        System.out.println(result);
     }
 }
