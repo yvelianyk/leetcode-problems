@@ -5,17 +5,18 @@ import com.company.Contest186.Problem1;
 import com.company.Contest186.Problem2;
 import com.company.Contest186.Problem4;
 import com.company.Contest186.Problem4BottomUp;
-import com.company.ThirtyDayChellenge.LongestCommonSubsequence;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        LongestCommonSubsequence solution = new LongestCommonSubsequence();
+        Problem4 solution = new Problem4();
+        Problem4BottomUp solution2 = new Problem4BottomUp();
         // [-5266,4019,7336,-3681,-5767]
         //2
-        int result = solution.longestCommonSubsequence("abdeace", "ace");
+        int result = solution.constrainedSubsetSum(new int[]{10,-2,-10,-5,20}, 2);
+        int result2 = solution2.constrainedSubsetSum(new int[]{10,-2,-10,-5,20}, 2);
         System.out.println(result);
     }
 }

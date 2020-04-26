@@ -14,9 +14,7 @@ public class Problem4 {
 
     private int getMax(int[] nums, int start, int k) {
         if (start == nums.length - 1) return nums[start];
-        if (memo[start] != null) {
-            return memo[start];
-        }
+        if (memo[start] != null) return memo[start];
 
         int result = nums[start];
         int end = Math.min(start + k, nums.length - 1);
@@ -24,8 +22,7 @@ public class Problem4 {
             int max = getMax(nums, i, k);
             result = Math.max(result, nums[start] + max);
         }
-        memo[start] += result;
+        memo[start] = result;
         res = Math.max(res, result);
         return result;
-    }
-}
+    }}
