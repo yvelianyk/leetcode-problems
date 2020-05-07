@@ -2,46 +2,50 @@ package com.company.MayLeetCodeChallenge;
 
 import com.company.BinaryTreePostorderTraversal145.TreeNode;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Queue;
-
 public class CousinsInBinaryTree {
-    Map<Integer, Integer> parentMap;
-    Map<Integer, Integer> depthMap;
-    public boolean isCousins(TreeNode root, int x, int y) {
-        parentMap = new HashMap<>();
-        depthMap = new HashMap<>();
-        traverse(root);
-        int xParent = parentMap.getOrDefault(x, 0);
-        int yParent = parentMap.getOrDefault(y, 0);
-        int xDepth = depthMap.get(x);
-        int yDepth = depthMap.get(y);
+    int x;
+    int y;
 
-        return xParent != yParent && xDepth == yDepth;
+    int xVisited;
+    int yVisited;
+
+    int xLevel = -1;
+    int yLevel = -1;
+
+    int xParent = -1;
+    int yParent = -1;
+
+    public boolean isCousins(TreeNode root, int x, int y) {
+        this.x = x;
+        this.y = y;
+
+        return traverse(root, null, 0);
     }
 
-    private void traverse(TreeNode node) {
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.add(node);
+    private boolean traverse(TreeNode node, TreeNode parent, int depth) {
+        if (node == null) return false;
 
-        int level = 0;
-        while (!queue.isEmpty()) {
-            int size = queue.size();
-            for (int i = 0; i < size; i++) {
-                TreeNode current = queue.poll();
-                depthMap.put(current.val, level);
-                if (current.left != null) {
-                    parentMap.put(current.left.val, current.val);
-                    queue.add(current.left);
-                }
-                if (current.right != null) {
-                    parentMap.put(current.right.val, current.val);
-                    queue.add(current.right);
-                }
-            }
-            level++;
+        if (node.val == x) {
+            xVisited = 1;
+            xLevel = depth;
+            xParent = parent != null ? parent.val: -1;
         }
+
+        if (node.val == y) {
+            yVisited = 1;
+            yLevel = depth;
+            yParent = parent != null ? parent.val: -1;
+        }
+
+        if (node.val == x && yVisited == 1 && yLevel == depth && yParent != xParent) {
+            return true;
+        }
+
+        if (node.val == y && xVisited == 1 && xLevel == depth && yParent != xParent) {
+            return true;
+        }
+
+        return traverse(node.left, node, depth + 1) || traverse(node.right, node, depth + 1);
+
     }
 }

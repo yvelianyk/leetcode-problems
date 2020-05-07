@@ -11,9 +11,13 @@ public class Main {
     public static void main(String[] args) throws IOException {
         CousinsInBinaryTree solution = new CousinsInBinaryTree();
         SerializeandDeserializeBinaryTree serializer = new SerializeandDeserializeBinaryTree();
-        TreeNode root = serializer.deserialize("[1,null,2,3,null,null,4,null,5]");
 
-        boolean result = solution.isCousins(root, 1,3);
+        //[1,2,3,null,4]
+        //2
+        //3
+        TreeNode root = serializer.deserialize("[1,2,3,null,4]");
+
+        boolean result = solution.isCousins(root, 2,3);
         System.out.println(result);
     }
 }
