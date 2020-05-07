@@ -1,24 +1,19 @@
 package com.company;
 
-
-import com.company.Contest187.Problem2;
-import com.company.Contest187.Problem4;
-import com.company.MakeArrayStrictlyIncreasing1187.MakeArrayStrictlyIncreasing;
-import com.company.MaximumSizeSubarraySumEqualsK325.MaximumSizeSubarraySumEqualsK;
-import com.company.MayLeetCodeChallenge.RansomNote;
+import com.company.BinaryTreePostorderTraversal145.TreeNode;
+import com.company.MayLeetCodeChallenge.CousinsInBinaryTree;
+import com.company.SerializeandDeserializeBinaryTree297.SerializeandDeserializeBinaryTree;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Problem4 solution = new Problem4();
-        int result = solution.kthSmallest(new int[][]{
-                {1,3,11},
-                {2,4,6},
-        }, 9);
+        CousinsInBinaryTree solution = new CousinsInBinaryTree();
+        SerializeandDeserializeBinaryTree serializer = new SerializeandDeserializeBinaryTree();
+        TreeNode root = serializer.deserialize("[1,null,2,3,null,null,4,null,5]");
+
+        boolean result = solution.isCousins(root, 1,3);
         System.out.println(result);
-//        RansomNote solution = new RansomNote();
-//        boolean result = solution.canConstruct("aa", "aab");
     }
 }
