@@ -3,6 +3,7 @@ package com.company.WordSearch76;
 import java.util.HashSet;
 import java.util.Set;
 
+// TODO:
 public class WordSearch {
 
     private boolean result = false;
@@ -38,6 +39,7 @@ public class WordSearch {
         char current = word.charAt(0);
 
         int[][] directions = new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+        // [[1,0],[0,1],[-1,0],[0,-1]]
         for (int[] direction : directions) {
             Point newPoint = new Point(i + direction[0], j + direction[1]);
             if (
