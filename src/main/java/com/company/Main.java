@@ -1,6 +1,7 @@
 package com.company;
 
 import com.company.Contest188.Problem3;
+import com.company.MayLeetCodeChallenge.FindTheTownJudge;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,25 +10,11 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Problem3 solution = new Problem3();
+        FindTheTownJudge solution = new FindTheTownJudge();
 
-        // [0,1],[0,2],[1,4],[1,5],[2,3],[2,6]
-        List<Boolean> hasApple = new ArrayList<>();
-        hasApple.add(false);
-        hasApple.add(false);
-        hasApple.add(true);
-        hasApple.add(false);
-        hasApple.add(true);
-        hasApple.add(true);
-        hasApple.add(false);
-        int result = solution.minTime(7, new int[][]{
-                {0,1},
-                {0,2},
-                {1,4},
-                {1,5},
-                {2,3},
-                {2,6},
-        }, hasApple);
+        // [1,3],[1,4],[2,3],[2,4],[4,3]
+        int result = solution.findJudge(1, new int[][]{
+        });
         System.out.println(result);
     }
 }
