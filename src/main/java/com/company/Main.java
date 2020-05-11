@@ -1,23 +1,20 @@
 package com.company;
 
-import com.company.Contest188.Problem3;
-import com.company.FloodFill733.FloodFillDFS;
-import com.company.MayLeetCodeChallenge.FindTheTownJudge;
+import com.company.WordSearch76.WordSearchA2;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        FloodFillDFS solution = new FloodFillDFS();
+        WordSearchA2 solution = new WordSearchA2();
 
         // [1,3],[1,4],[2,3],[2,4],[4,3]
-        int[][] result = solution.floodFill(new int[][]{
-                {0,0,0},
-                {0,1,1}
-        },1,1,1);
+        boolean result = solution.exist(new char[][]{
+                {'A','B','C','E'},
+                {'S','F','C','S'},
+                {'A','D','E','E'},
+        },"ABCCCED");
         System.out.println(result);
     }
 }
