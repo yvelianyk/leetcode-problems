@@ -1,20 +1,15 @@
 package com.company;
 
-import com.company.WordSearch76.WordSearchA2;
+import com.company.MayLeetCodeChallenge.SingleElementInSortedArray;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        WordSearchA2 solution = new WordSearchA2();
+        SingleElementInSortedArray solution = new SingleElementInSortedArray();
 
-        // [1,3],[1,4],[2,3],[2,4],[4,3]
-        boolean result = solution.exist(new char[][]{
-                {'A','B','C','E'},
-                {'S','F','C','S'},
-                {'A','D','E','E'},
-        },"ABCCCED");
+        int result = solution.singleNonDuplicate(new int[]{1,1,2,3,3,4,4,8,8});
         System.out.println(result);
     }
 }
