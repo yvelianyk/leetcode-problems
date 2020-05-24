@@ -1,10 +1,5 @@
 package com.company.Contest190;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-// TODO:
 public class Problem4 {
     int[] nums1;
     int[] nums2;
