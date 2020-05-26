@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.CombinationSumIV377.CombinationSumIV;
 import com.company.TargetSum494.TargetSumA2;
 
 import java.io.IOException;
@@ -7,9 +8,9 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        TargetSumA2 solution = new TargetSumA2();
+        CombinationSumIV solution = new CombinationSumIV();
 
-        int result = solution.findTargetSumWays(new int[]{1,1,1,1,1}, 3);
+        int result = solution.combinationSum4(new int[]{1,2,3}, 4);
         System.out.println(result);
     }
 }
