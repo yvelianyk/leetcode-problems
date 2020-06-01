@@ -2,6 +2,7 @@ package com.company;
 
 import com.company.CombinationSumIV377.CombinationSumIV;
 import com.company.DiceRollSimulation1223.DiceRollSimulation;
+import com.company.PartitionalEqualSubsetSum416.PartitionalEqualSubsetSum;
 import com.company.TargetSum494.TargetSumA2;
 
 import java.io.IOException;
@@ -9,9 +10,9 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        DiceRollSimulation solution = new DiceRollSimulation();
+        PartitionalEqualSubsetSum solution = new PartitionalEqualSubsetSum();
 
-        int result = solution.dieSimulator(2, new int[]{1,1,2,2,2,3});
+        boolean result = solution.canPartition(new int[]{1,2,3,4,5,6,7});
         System.out.println(result);
     }
 }
