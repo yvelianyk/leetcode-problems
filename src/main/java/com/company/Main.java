@@ -1,18 +1,18 @@
 package com.company;
 
-import com.company.CombinationSumIV377.CombinationSumIV;
-import com.company.DiceRollSimulation1223.DiceRollSimulation;
-import com.company.PartitionalEqualSubsetSum416.PartitionalEqualSubsetSum;
-import com.company.TargetSum494.TargetSumA2;
+import com.company.BinaryTreePostorderTraversal145.TreeNode;
+import com.company.InvertBinaryTree226.InvertBinaryTree;
+import com.company.SerializeandDeserializeBinaryTree297.SerializeandDeserializeBinaryTree;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        PartitionalEqualSubsetSum solution = new PartitionalEqualSubsetSum();
-
-        boolean result = solution.canPartition(new int[]{1,2,3,4,5,6,7});
+        InvertBinaryTree solution = new InvertBinaryTree();
+        SerializeandDeserializeBinaryTree serializer = new SerializeandDeserializeBinaryTree();
+        TreeNode root = serializer.deserialize("[4,2,7,1,3,6,9]");
+        TreeNode result = solution.invertTree(root);
         System.out.println(result);
     }
 }
