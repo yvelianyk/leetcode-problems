@@ -2,6 +2,7 @@ package com.company;
 
 import com.company.BinaryTreePostorderTraversal145.TreeNode;
 import com.company.InvertBinaryTree226.InvertBinaryTree;
+import com.company.JuneLeetcodeChallenge.TwoCityScheduling;
 import com.company.SerializeandDeserializeBinaryTree297.SerializeandDeserializeBinaryTree;
 
 import java.io.IOException;
@@ -9,10 +10,8 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        InvertBinaryTree solution = new InvertBinaryTree();
-        SerializeandDeserializeBinaryTree serializer = new SerializeandDeserializeBinaryTree();
-        TreeNode root = serializer.deserialize("[4,2,7,1,3,6,9]");
-        TreeNode result = solution.invertTree(root);
+        TwoCityScheduling solution = new TwoCityScheduling();
+        int result = solution.twoCitySchedCost(new int[][]{{22,30},{33,200},{40,50},{30,20}});
         System.out.println(result);
     }
 }
