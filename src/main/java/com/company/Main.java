@@ -1,22 +1,44 @@
 package com.company;
 
-import com.company.BinaryTreePostorderTraversal145.TreeNode;
-import com.company.InvertBinaryTree226.InvertBinaryTree;
-import com.company.JuneLeetcodeChallenge.TwoCityScheduling;
-import com.company.MinSwapsSeqIncreasing801.MinSwapsSeqIncreasing;
-import com.company.NumOfLongestIncrSubsequence673.NumOfLongestIncrSubsequence;
-import com.company.SerializeandDeserializeBinaryTree297.SerializeandDeserializeBinaryTree;
+import com.company.Contest192.Problem4;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        NumOfLongestIncrSubsequence solution = new NumOfLongestIncrSubsequence();
+        Problem4 solution = new Problem4();
 
-        // [3,3,8,9,10]
-        //[1,7,4,6,8]
-        int result = solution.findNumberOfLIS(new int[]{1,3,5,4,7});
+        // [1,10],[10,1],[10,1],[1,10],[5,1
+//        int result = solution.minCost(new int[]{0,0,0,0,0}, new int[][]{
+//                {1,10},
+//                {10,1},
+//                {10,1},
+//                {1,10},
+//                {5,1}
+//        }, 5,2,3);
+
+//        int result = solution.minCost(new int[]{0,2,1,2,0}, new int[][]{
+//                {1,10},
+//                {10,1},
+//                {10,1},
+//                {1,10},
+//                {5,1}
+//        }, 5,2,3);
+
+        int result = solution.minCost(new int[]{0,0,0,0,0}, new int[][]{
+                {1,10},
+                {10,1},
+                {1,10},
+                {10,1},
+                {1,10}
+        }, 5,2,5);
+//        int result = solution.minCost(new int[]{3,1,2,3}, new int[][]{
+//                {1,1,1},
+//                {1,1,1},
+//                {1,1,1},
+//                {1,1,1},
+//        }, 4,3,3);
         System.out.println(result);
     }
 }
