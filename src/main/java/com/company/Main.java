@@ -1,15 +1,18 @@
 package com.company;
 
 import com.company.JuneLeetcodeChallenge.PowerOfTwo;
+import com.company.UniquePathsII63.UniquePathsII;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        PowerOfTwo solution = new PowerOfTwo();
+        UniquePathsII solution = new UniquePathsII();
 
-        boolean result = solution.isPowerOfTwo(218);
+        int result = solution.uniquePathsWithObstacles(new int[][]{
+                {1,0},
+        });
         System.out.println(result);
     }
 }
