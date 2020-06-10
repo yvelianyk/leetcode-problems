@@ -1,18 +1,15 @@
 package com.company;
 
-import com.company.JuneLeetcodeChallenge.PowerOfTwo;
-import com.company.UniquePathsII63.UniquePathsII;
+import com.company.JuneLeetcodeChallenge.IsSubsequence;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        UniquePathsII solution = new UniquePathsII();
+        IsSubsequence solution = new IsSubsequence();
 
-        int result = solution.uniquePathsWithObstacles(new int[][]{
-                {1,0},
-        });
+        boolean result = solution.isSubsequence("aec","abcde");
         System.out.println(result);
     }
 }
