@@ -1,7 +1,7 @@
 package com.company.MaximumProductSubarray152;
 
+// TODO: WRITE ARTICLE ABOUT IT. VERY INTERESTING PROBLEM
 public class MaximumProductSubarray {
-
 
     public int maxProduct(int[] nums) {
         int n = nums.length;
