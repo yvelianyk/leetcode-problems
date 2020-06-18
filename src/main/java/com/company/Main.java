@@ -1,22 +1,15 @@
 package com.company;
 
-import com.company.BurstBaloons312.BurstBaloons;
-import com.company.Contest193.Problem2;
-import com.company.Contest193.Problem3;
-import com.company.Contest193.TreeAncestor;
-import com.company.JuneLeetcodeChallenge.HIndexII;
-import com.company.JuneLeetcodeChallenge.SurroundedRegions;
-import com.company.MaximumSubarray53.MaximumSubarray;
-import com.company.MaximumSubarray53.MaximumSubarrayDP;
+import com.company.MaximumProductSubarray152.MaximumProductSubarray;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        MaximumSubarrayDP solution = new MaximumSubarrayDP();
+        MaximumProductSubarray solution = new MaximumProductSubarray();
 
-        int result = solution.maxSubArray(new int[]{-1,-2});
+        int result = solution.maxProduct(new int[]{-2,3,-4});
         System.out.println(result);
     }
 }
