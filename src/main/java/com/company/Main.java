@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.JuneLeetcodeChallenge.LongestDuplicatedSubstring;
 import com.company.MaximumProductSubarray152.MaximumProductSubarray;
 
 import java.io.IOException;
@@ -7,9 +8,9 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        MaximumProductSubarray solution = new MaximumProductSubarray();
+        LongestDuplicatedSubstring solution = new LongestDuplicatedSubstring();
 
-        int result = solution.maxProduct(new int[]{-2,3,-4});
+        String result = solution.longestDupSubstring("abcd");
         System.out.println(result);
     }
 }
