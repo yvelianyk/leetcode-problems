@@ -3,9 +3,7 @@ package com.company.JuneLeetcodeChallenge;
 import com.company.BinaryTreePostorderTraversal145.TreeNode;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Stack;
 
 // TODO: can do it without backtracking array, just precompute sum
 public class RootToLeafSum {
