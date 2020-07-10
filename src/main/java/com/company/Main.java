@@ -1,24 +1,20 @@
 package com.company;
 
-import com.company.BinaryTreePostorderTraversal145.TreeNode;
-import com.company.JuneLeetcodeChallenge.LongestDuplicatedSubstring;
-import com.company.JuneLeetcodeChallenge.RootToLeafSum;
+import com.company.IslandPerimeter463.IslandPerimeter;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        RootToLeafSum solution = new RootToLeafSum();
+        IslandPerimeter solution = new IslandPerimeter();
 
-        TreeNode root = new TreeNode(1);
-        TreeNode left = new TreeNode(2);
-        TreeNode right = new TreeNode(3);
-        root.left = left;
-        root.right = right;
-
-
-        int result = solution.sumNumbers(root);
+        int result = solution.islandPerimeter(new int[][]{
+                {0,1,0,0},
+                {1,1,1,0},
+                {0,1,0,0},
+                {1,1,0,0},
+        });
         System.out.println(result);
     }
 }
