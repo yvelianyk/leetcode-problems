@@ -1,18 +1,20 @@
 package com.company;
 
-import com.company.BContest30.MinDiffLargSmall3Moves;
-import com.company.BContest30.RangeSumOfSubarraySums;
-import com.company.BContest30.StoneGameIV;
-import com.company.IslandPerimeter463.IslandPerimeter;
+import com.company.Contest198.Problem2;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        StoneGameIV solution = new StoneGameIV();
+        Problem2 solution = new Problem2();
 
-        boolean result = solution.winnerSquareGame(6);
+        int[][] edges = new int[][] {
+                {0,1},
+                {1,2},
+                {0,3},
+        };
+        int[] result = solution.countSubTrees(4, edges, "bbbb");
         System.out.println(result);
     }
 }
