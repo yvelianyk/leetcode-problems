@@ -1,6 +1,5 @@
 package com.company;
 
-import com.company.Contest198.Problem2;
 import com.company.CourseScheduleII210.CourseScheduleII;
 
 import java.io.IOException;

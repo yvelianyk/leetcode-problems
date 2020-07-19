@@ -1,7 +1,5 @@
 package com.company.CourseScheduleII210;
 
-import com.company.Contest198.Problem2;
-
 import java.util.*;
 
 public class CourseScheduleII {
