@@ -1,19 +1,22 @@
 package com.company;
 
-import com.company.CourseScheduleII210.CourseScheduleII;
+import com.company.JuneLeetcodeChallenge.AllPathsFromSourceToTarget;
 
 import java.io.IOException;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        CourseScheduleII solution = new CourseScheduleII();
+        AllPathsFromSourceToTarget solution = new AllPathsFromSourceToTarget();
 
         int[][] edges = new int[][] {
-                {0,1},
-                {1,0},
+                {1,2},
+                {3},
+                {3},
+                {}
         };
-        int[] result = solution.findOrder(3, edges);
+        List<List<Integer>> result = solution.allPathsSourceTarget(edges);
         System.out.println(result);
     }
 }
