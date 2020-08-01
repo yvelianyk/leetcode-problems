@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.AugustLeetcodeChallenge.DetectCapital;
 import com.company.JuneLeetcodeChallenge.AllPathsFromSourceToTarget;
 import com.company.JuneLeetcodeChallenge.BestTiemToBuyAndSellCooldown;
 
@@ -9,9 +10,9 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        BestTiemToBuyAndSellCooldown solution = new BestTiemToBuyAndSellCooldown();
+        DetectCapital solution = new DetectCapital();
 
-        int result = solution.maxProfit(new int[]{1,2,3,0,2});
+        boolean result = solution.detectCapitalUse("asdasd");
         System.out.println(result);
     }
 }
