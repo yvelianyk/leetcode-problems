@@ -1,18 +1,18 @@
 package com.company;
 
-import com.company.AugustLeetcodeChallenge.DetectCapital;
-import com.company.JuneLeetcodeChallenge.AllPathsFromSourceToTarget;
-import com.company.JuneLeetcodeChallenge.BestTiemToBuyAndSellCooldown;
+import com.company.Contest200.Problem4;
 
 import java.io.IOException;
-import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        DetectCapital solution = new DetectCapital();
+        Problem4 solution = new Problem4();
 
-        boolean result = solution.detectCapitalUse("asdasd");
+        int result = solution.maxSum(
+                new int[]{2,4,5,8,10},
+                new int[]{4,6,8,9}
+        );
         System.out.println(result);
     }
 }
