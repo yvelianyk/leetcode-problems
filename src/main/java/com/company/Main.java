@@ -1,18 +1,14 @@
 package com.company;
 
-import com.company.AugustLeetcodeChallenge.PathSumIII;
-import com.company.BinaryTreePostorderTraversal145.TreeNode;
-import com.company.SerializeandDeserializeBinaryTree297.SerializeandDeserializeBinaryTree;
+import com.company.AugustLeetcodeChallenge.TitleToNumber;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        PathSumIII solution = new PathSumIII();
-        SerializeandDeserializeBinaryTree serializer = new SerializeandDeserializeBinaryTree();
-        TreeNode root = serializer.deserialize("[1,-2,-3,1,3,-2,null,-1]");
-        int result = solution.pathSum(root, -1);
+        TitleToNumber solution = new TitleToNumber();
+        int result = solution.titleToNumber("BBB");
         System.out.println(result);
     }
 }
