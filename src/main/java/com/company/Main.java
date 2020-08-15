@@ -1,7 +1,6 @@
 package com.company;
 
 import com.company.AugustLeetcodeChallenge.LongestPalindrome;
-import com.company.AugustLeetcodeChallenge.NonOverlappingIntervals;
 
 import java.io.IOException;
 
