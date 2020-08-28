@@ -1,18 +1,24 @@
 package com.company;
 
-import com.company.AugustLeetcodeChallenge.FizzBuzz;
-import com.company.AugustLeetcodeChallenge.IncreasingOrderSearchTree;
-import com.company.BinaryTreePostorderTraversal145.TreeNode;
-import com.company.SerializeandDeserializeBinaryTree297.SerializeandDeserializeBinaryTree;
+import com.company.AugustLeetcodeChallenge.ReorderLinkedList;
+import com.company.LinkedListCycleII142.ListNode;
 
 import java.io.IOException;
-import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        FizzBuzz solution = new FizzBuzz();
-        List<String> result = solution.fizzBuzz(15);
-        System.out.println(result);
+        ReorderLinkedList solution = new ReorderLinkedList();
+        ListNode head = new ListNode(1);
+        ListNode node1 = new ListNode(2);
+        ListNode node2 = new ListNode(3);
+        ListNode node3 = new ListNode(4);
+        ListNode node4 = new ListNode(5);
+        head.next = node1;
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = node4;
+        solution.reorderList(head);
+        System.out.println(head);
     }
 }
