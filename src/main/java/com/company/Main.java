@@ -1,7 +1,7 @@
 package com.company;
 
 import com.company.BinaryTreePostorderTraversal145.TreeNode;
-import com.company.Contest209.Problem2;
+import com.company.BContest36.Problem3;
 import com.company.SerializeandDeserializeBinaryTree297.SerializeandDeserializeBinaryTree;
 
 import java.io.IOException;
@@ -10,11 +10,9 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Problem2 solution = new Problem2();
+        Problem3 solution = new Problem3();
 
-        SerializeandDeserializeBinaryTree serialiser = new SerializeandDeserializeBinaryTree();
-        TreeNode root = serialiser.deserialize("[11,8,6,1,3,9,11,30,20,18,16,12,10,4,2,17]");
-        boolean res = solution.isEvenOddTree(root);
+        int[][] res = solution.restoreMatrix(new int[]{5,7,10}, new int[]{8,6,8});
         System.out.println(res);
     }
 }
