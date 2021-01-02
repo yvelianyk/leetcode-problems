@@ -1,18 +1,22 @@
 package com.company;
 
-import com.company.BContest42.Problem1;
-import com.company.BContest42.Problem2;
-import com.company.Challenges.*;
+import com.company.BinaryTreePostorderTraversal145.TreeNode;
+import com.company.Challenges.CorrespondingNodeBinTree;
+import com.company.SerializeandDeserializeBinaryTree297.SerializeandDeserializeBinaryTree;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        CheckArrayFormation solution = new CheckArrayFormation();
+        CorrespondingNodeBinTree solution = new CorrespondingNodeBinTree();
+        SerializeandDeserializeBinaryTree serializer = new SerializeandDeserializeBinaryTree();
+        TreeNode root = serializer.deserialize("[7,4,3,null,null,6,19]");
+        TreeNode target = root.right.left;
+        TreeNode clone = serializer.deserialize("[7,4,3,null,null,6,19]");
 
-//        boolean res = solution.canFormArray(new int[]{91,4,64,78}, new int[][]{{78},{4,64},{91} });
-        boolean res = solution.canFormArray(new int[]{49,18,16}, new int[][]{{16,18,49}});
+
+        TreeNode res = solution.getTargetCopy(root, clone, target);
 
         System.out.println(res);
     }
