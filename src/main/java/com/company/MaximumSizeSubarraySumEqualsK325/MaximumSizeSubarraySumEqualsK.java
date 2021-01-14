@@ -27,10 +27,10 @@ public class MaximumSizeSubarraySumEqualsK {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < prefix.length; i++) {
             int num = prefix[i] - k;
+            map.putIfAbsent(prefix[i], i);
             if (map.containsKey(num)) {
                 result = Math.max(result, i - map.get(num));
             }
-            map.putIfAbsent(prefix[i], i);
         }
         return result;
     }

@@ -1,15 +1,15 @@
 package com.company;
 
-import com.company.Challenges.BoatsToSavePeople;
+import com.company.Challenges.MinOperationsToReduceXToZero;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        BoatsToSavePeople solution = new BoatsToSavePeople();
+        MinOperationsToReduceXToZero solution = new MinOperationsToReduceXToZero();
 
-        int res = solution.numRescueBoats(new int[]{1,2,2,3}, 4);
+        int res = solution.minOperations(new int[]{5,6,7,8,9}, 4);
         System.out.println(res);
     }
 }
