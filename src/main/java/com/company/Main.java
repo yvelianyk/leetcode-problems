@@ -1,15 +1,15 @@
 package com.company;
 
-import com.company.Challenges.MinOperationsToReduceXToZero;
+import com.company.Challenges.MaxInGeneratedArray;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        MinOperationsToReduceXToZero solution = new MinOperationsToReduceXToZero();
+        MaxInGeneratedArray solution = new MaxInGeneratedArray();
 
-        int res = solution.minOperations(new int[]{5,6,7,8,9}, 4);
+        int res = solution.getMaximumGenerated(3);
         System.out.println(res);
     }
 }
