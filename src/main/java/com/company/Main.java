@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.Challenges.CountSortedVowelStrings;
 import com.company.Challenges.MaxInGeneratedArray;
 
 import java.io.IOException;
@@ -7,9 +8,9 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        MaxInGeneratedArray solution = new MaxInGeneratedArray();
+        CountSortedVowelStrings solution = new CountSortedVowelStrings();
 
-        int res = solution.getMaximumGenerated(3);
+        int res = solution.countVowelStrings(33);
         System.out.println(res);
     }
 }
