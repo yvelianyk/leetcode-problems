@@ -1,18 +1,20 @@
 package com.company;
 
-import com.company.Challenges.MinimizeDeviationInArray;
-import com.company.Challenges.MinimumDeletions;
-import com.company.Challenges.ShortestPathToChar;
-import com.company.Challenges.SimplifyPath;
+import com.company.BinaryTreePostorderTraversal145.TreeNode;
+import com.company.Challenges.*;
+import com.company.SerializeandDeserializeBinaryTree297.SerializeandDeserializeBinaryTree;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        ShortestPathToChar solution = new ShortestPathToChar();
+        ConverBSTToGreaterTree solution = new ConverBSTToGreaterTree();
+        SerializeandDeserializeBinaryTree serializer = new SerializeandDeserializeBinaryTree();
+        TreeNode root = serializer.deserialize("[4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]");
 
-        int[] res = solution.shortestToChar("loveleetcode", 'e');
+        TreeNode res = solution.convertBST(root);
+        String resstr = serializer.serialize(res);
 
         System.out.println(res);
     }
