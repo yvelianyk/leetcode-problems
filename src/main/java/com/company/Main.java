@@ -9,12 +9,13 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        ConverBSTToGreaterTree solution = new ConverBSTToGreaterTree();
-        SerializeandDeserializeBinaryTree serializer = new SerializeandDeserializeBinaryTree();
-        TreeNode root = serializer.deserialize("[4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]");
+        BipartiteGraph solution = new BipartiteGraph();
 
-        TreeNode res = solution.convertBST(root);
-        String resstr = serializer.serialize(res);
+        boolean res = solution.isBipartite(new int[][]{{1,3},{0,2},{1,3},{0,2}});
+
+//        boolean res = solution.isBipartite(new int[][]{{},{2},{},{1}, {}});
+
+//        boolean res = solution.isBipartite(new int[][]{{1,2,3},{0,2},{0,1,3},{0,2}});
 
         System.out.println(res);
     }
