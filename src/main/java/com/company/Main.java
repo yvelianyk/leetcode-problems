@@ -1,16 +1,19 @@
 package com.company;
 
-import com.company.BContest47.Problem3;
-import com.company.Challenges.ShortEncodingWords;
+import com.company.BinaryTreePostorderTraversal145.TreeNode;
+import com.company.Challenges.AddOneRowToTree;
+import com.company.SerializeandDeserializeBinaryTree297.SerializeandDeserializeBinaryTree;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        ShortEncodingWords solution = new ShortEncodingWords();
+        AddOneRowToTree solution = new AddOneRowToTree();
+        SerializeandDeserializeBinaryTree serializer = new SerializeandDeserializeBinaryTree();
+        TreeNode root = serializer.deserialize("[4,2,6,3,1,5]");
 
-        int result = solution.minimumLengthEncoding(new String[]{"time", "me", "bell"});
+        TreeNode result = solution.addOneRow(root, 1, 2);
 
         System.out.println(result);
     }
