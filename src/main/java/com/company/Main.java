@@ -1,15 +1,16 @@
 package com.company;
 
 import com.company.Challenges.IntegerToRoman;
+import com.company.Challenges.OneSegments;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        IntegerToRoman solution = new IntegerToRoman();
+        OneSegments solution = new OneSegments();
 
-        String result = solution.intToRoman(2998);
+        boolean result = solution.checkOnesSegment("11");
 
         System.out.println(result);
     }
