@@ -1,13 +1,10 @@
 package com.company.Challenges;
 
-import java.util.Arrays;
-
 public class MinElemsGivenSum {
     public int minElements(int[] nums, int limit, int goal) {
         long sum = 0L;
-        for(int num: nums) {
-            sum = sum + num;
-        }
+        for (int num: nums) sum = sum + num;
+
         if (goal == sum) return 0;
         long target = Math.abs(goal - sum);
         long minElements = 0;
